@@ -1,3 +1,5 @@
-import Home from 'pages/home';
+// import Home from 'pages/home';
+// eslint-disable-next-line import/no-named-as-default
+import PlasmicHomepage from '../components/plasmic/integration/PlasmicHomepage';
 
-export default Home;
+export default PlasmicHomepage;
