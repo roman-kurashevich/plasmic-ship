@@ -1,0 +1,195 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: auto;
+  min-width: 0;
+}
+.signup2 {
+  background: rgba(255, 255, 255, 1);
+  width: 1440px;
+  height: 1024px;
+  display: block;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.header:global(.__wab_instance) {
+  max-width: 100%;
+  position: sticky;
+}
+.frame2 {
+  flex-direction: column;
+  width: auto;
+  height: auto;
+  display: flex;
+  position: absolute;
+  top: 225px;
+  left: 156px;
+}
+.frame2 > :global(.__wab_flex-container) {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: calc(0px - 32px);
+  height: calc(100% + 32px);
+}
+.frame2 > :global(.__wab_flex-container) > *,
+.frame2 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.frame2 > :global(.__wab_flex-container) > picture > img,
+.frame2
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-top: 32px;
+}
+.frame1 {
+  flex-direction: column;
+  width: 408px;
+  height: auto;
+  display: flex;
+  position: relative;
+}
+.frame1 > :global(.__wab_flex-container) {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: calc(0px - 12px);
+  height: calc(100% + 12px);
+}
+.frame1 > :global(.__wab_flex-container) > *,
+.frame1 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.frame1 > :global(.__wab_flex-container) > picture > img,
+.frame1
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-top: 12px;
+}
+.signUp {
+  display: block;
+  font-size: 34px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0em;
+  line-height: 1.29999;
+  color: rgba(15, 16, 18, 1);
+  position: relative;
+}
+.text3 {
+  display: block;
+  font-size: 18px;
+  letter-spacing: 0em;
+  line-height: 1.45;
+  color: rgba(133, 141, 149, 1);
+  align-self: stretch;
+  position: relative;
+}
+.textInput:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+  position: relative;
+  width: 100%;
+  min-width: 0;
+}
+.text___0NXc {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+  font-size: 18px;
+  font-weight: 700;
+  min-width: 0;
+}
+.buttonsContainer {
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  display: flex;
+  position: relative;
+  min-width: 0;
+}
+.buttonsContainer > :global(.__wab_flex-container) {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  min-width: 0;
+  margin-top: calc(0px - 12px);
+  height: calc(100% + 12px);
+}
+.buttonsContainer > :global(.__wab_flex-container) > *,
+.buttonsContainer > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.buttonsContainer > :global(.__wab_flex-container) > picture > img,
+.buttonsContainer
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-top: 12px;
+}
+.link {
+  position: relative;
+  display: flex;
+  width: 100%;
+  min-width: 0;
+}
+.button__u6PU5:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+}
+.text__zdLln {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+  min-width: 0;
+}
+.button__vnVf2:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+  position: relative;
+}
+.text__zWcgj {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+  min-width: 0;
+}
+.rectangle122 {
+  background: rgba(234, 250, 237, 1);
+  width: 720px;
+  height: 1024px;
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 720px;
+}
+.svg {
+  position: absolute;
+  object-fit: cover;
+  max-width: 100%;
+  color: #51cf66;
+  width: 237px;
+  height: 237px;
+  display: block;
+  top: 393px;
+  left: 962px;
+}
+.rectangle123 {
+  backdrop-filter: blur(70px);
+  background: rgba(255, 255, 255, 0.009);
+  width: 720px;
+  height: 512px;
+  display: block;
+  position: absolute;
+  top: 512px;
+  left: 720px;
+  -webkit-backdrop-filter: blur(70px);
+}

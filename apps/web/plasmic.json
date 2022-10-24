@@ -40,10 +40,114 @@
           "cssFilePath": "plasmic/integration/PlasmicHomepage.module.css",
           "scheme": "blackbox",
           "componentType": "page"
+        },
+        {
+          "id": "lao2224rYIi",
+          "name": "Header",
+          "type": "managed",
+          "projectId": "ph1WL4Cxb3ZK7yQC6LjnPo",
+          "renderModuleFilePath": "plasmic/integration/PlasmicHeader.tsx",
+          "importSpec": {
+            "modulePath": "Header.tsx"
+          },
+          "cssFilePath": "plasmic/integration/PlasmicHeader.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "P_BN2FI77x",
+          "name": "Signup",
+          "type": "managed",
+          "projectId": "ph1WL4Cxb3ZK7yQC6LjnPo",
+          "renderModuleFilePath": "plasmic/integration/PlasmicSignup.tsx",
+          "importSpec": {
+            "modulePath": "../pages/signup.page.tsx"
+          },
+          "cssFilePath": "plasmic/integration/PlasmicSignup.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "hiwxbifKaa",
+          "name": "EnterCode",
+          "type": "managed",
+          "projectId": "ph1WL4Cxb3ZK7yQC6LjnPo",
+          "renderModuleFilePath": "plasmic/integration/PlasmicEnterCode.tsx",
+          "importSpec": {
+            "modulePath": "../pages/enter-code.page.tsx"
+          },
+          "cssFilePath": "plasmic/integration/PlasmicEnterCode.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "EDVx4DP3jG",
+          "name": "Setup",
+          "type": "managed",
+          "projectId": "ph1WL4Cxb3ZK7yQC6LjnPo",
+          "renderModuleFilePath": "plasmic/integration/PlasmicSetup.tsx",
+          "importSpec": {
+            "modulePath": "../pages/setup.page.tsx"
+          },
+          "cssFilePath": "plasmic/integration/PlasmicSetup.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
         }
       ],
-      "icons": [],
-      "images": [],
+      "icons": [
+        {
+          "id": "QWKGSm8cyW",
+          "name": "SearchIcon",
+          "moduleFilePath": "plasmic/integration/icons/PlasmicIcon__Search.tsx"
+        },
+        {
+          "id": "OKnpKfxY5Ul",
+          "name": "Icon16PxCheckIcon",
+          "moduleFilePath": "plasmic/integration/icons/PlasmicIcon__Icon16PxCheck.tsx"
+        },
+        {
+          "id": "-K789bKfxu9",
+          "name": "Rectangle115Icon",
+          "moduleFilePath": "plasmic/integration/icons/PlasmicIcon__Rectangle115.tsx"
+        },
+        {
+          "id": "X8WUlOXEdpi",
+          "name": "Group4195Icon",
+          "moduleFilePath": "plasmic/integration/icons/PlasmicIcon__Group4195.tsx"
+        },
+        {
+          "id": "3xxbWDycExW",
+          "name": "Ellipse2Icon",
+          "moduleFilePath": "plasmic/integration/icons/PlasmicIcon__Ellipse2.tsx"
+        },
+        {
+          "id": "02Ckg7B088-",
+          "name": "Icon16PxCheck2Icon",
+          "moduleFilePath": "plasmic/integration/icons/PlasmicIcon__Icon16PxCheck2.tsx"
+        },
+        {
+          "id": "6_7lSjxi83h",
+          "name": "Rectangle116Icon",
+          "moduleFilePath": "plasmic/integration/icons/PlasmicIcon__Rectangle116.tsx"
+        },
+        {
+          "id": "VYfKL0Faz2r",
+          "name": "Ellipse3Icon",
+          "moduleFilePath": "plasmic/integration/icons/PlasmicIcon__Ellipse3.tsx"
+        },
+        {
+          "id": "59951HaWC",
+          "name": "LeftArrow1Icon",
+          "moduleFilePath": "plasmic/integration/icons/PlasmicIcon__LeftArrow1.tsx"
+        }
+      ],
+      "images": [
+        {
+          "id": "EThtubeXCmE",
+          "name": "eye_open",
+          "filePath": "../public/plasmic/integration/images/eyeOpen.svg"
+        }
+      ],
       "indirect": false,
       "globalContextsFilePath": "",
       "codeComponents": [
@@ -58,24 +162,24 @@
           "componentImportPath": "@plasmicapp/data-sources"
         },
         {
-          "id": "6ukG2W1mJq",
-          "name": "Comp6UkG2W1MJq",
-          "componentImportPath": ""
+          "id": "eV6E2AjDCw",
+          "name": "Button",
+          "componentImportPath": "@mantine/core"
         },
         {
-          "id": "T-8ipPeIQ-",
-          "name": "CompT8IpPeIq",
-          "componentImportPath": ""
+          "id": "-QKVl7km6e",
+          "name": "TextInput",
+          "componentImportPath": "@mantine/core"
         },
         {
-          "id": "CPDvjU_oD8",
-          "name": "CompCpDvjUOD8",
-          "componentImportPath": ""
+          "id": "aQ6gxybG5l",
+          "name": "Select",
+          "componentImportPath": "@mantine/core"
         },
         {
-          "id": "NCQ_v0udBB",
-          "name": "CompNcqV0UdBb",
-          "componentImportPath": ""
+          "id": "S8lT4tfZVW",
+          "name": "Link",
+          "componentImportPath": "./src/components"
         }
       ]
     }

@@ -11,14 +11,11 @@ export enum LayoutType {
 export enum RoutePath {
   // Private paths
   Home = '/',
-  Profile = '/profile',
 
   // Auth paths
-  SignIn = '/sign-in',
-  SignUp = '/sign-up',
-  ForgotPassword = '/forgot-password',
-  ResetPassword = '/reset-password',
-  ExpireToken = '/expire-token',
+  SignUpPlasmic = '/signup',
+  EnterCodePlasmic = '/enter-code',
+  SetupPlasmic = '/setup',
 
   NotFound = '/404',
 }
@@ -33,32 +30,18 @@ type RoutesConfiguration = {
 export const routesConfiguration: RoutesConfiguration = {
   // Private routes
   [RoutePath.Home]: {
-    scope: ScopeType.PUBLIC,
-    layout: LayoutType.MAIN,
-  },
-  [RoutePath.Profile]: {
     scope: ScopeType.PRIVATE,
     layout: LayoutType.MAIN,
   },
-
-  // Auth routes
-  [RoutePath.SignIn]: {
+  [RoutePath.SignUpPlasmic]: {
     scope: ScopeType.PUBLIC,
     layout: LayoutType.UNAUTHORIZED,
   },
-  [RoutePath.SignUp]: {
+  [RoutePath.EnterCodePlasmic]: {
     scope: ScopeType.PUBLIC,
     layout: LayoutType.UNAUTHORIZED,
   },
-  [RoutePath.ForgotPassword]: {
-    scope: ScopeType.PUBLIC,
-    layout: LayoutType.UNAUTHORIZED,
-  },
-  [RoutePath.ResetPassword]: {
-    scope: ScopeType.PUBLIC,
-    layout: LayoutType.UNAUTHORIZED,
-  },
-  [RoutePath.ExpireToken]: {
+  [RoutePath.SetupPlasmic]: {
     scope: ScopeType.PUBLIC,
     layout: LayoutType.UNAUTHORIZED,
   },

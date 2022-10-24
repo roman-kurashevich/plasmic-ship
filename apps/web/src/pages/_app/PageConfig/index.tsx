@@ -35,7 +35,7 @@ const PageConfig: FC<PageConfigProps> = ({ children }) => {
   const Layout = layout ? layoutToComponent[layout] : Fragment;
 
   if (scope === ScopeType.PRIVATE && !account) {
-    push(RoutePath.SignIn);
+    push(RoutePath.SignUpPlasmic);
     return null;
   }
 
