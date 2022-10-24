@@ -34,10 +34,6 @@ import {
   deriveRenderOpts,
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
-import { Button } from "@mantine/core"; // plasmic-import: eV6E2AjDCw/codeComponent
-import { Select } from "@mantine/core"; // plasmic-import: aQ6gxybG5l/codeComponent
-import { TextInput } from "@mantine/core"; // plasmic-import: -QKVl7km6e/codeComponent
-import { Link as Link2 } from "../.."; // plasmic-import: S8lT4tfZVW/codeComponent
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
@@ -57,13 +53,6 @@ export type PlasmicHomepage__OverridesType = {
   root?: p.Flex<"div">;
   section?: p.Flex<"section">;
   h1?: p.Flex<"h1">;
-  link?: p.Flex<"a"> & Partial<LinkProps>;
-  mantineContainerText?: p.Flex<"div">;
-  selectMantine?: p.Flex<typeof Select>;
-  textInput?: p.Flex<typeof TextInput>;
-  mantineContainerText2?: p.Flex<"div">;
-  linkShip?: p.Flex<typeof Link2>;
-  textbox?: p.Flex<typeof TextInput>;
 };
 
 export interface DefaultHomepageProps {}
@@ -127,259 +116,16 @@ function PlasmicHomepage__RenderFunc(props: {
           >
             {"Welcome to Plasmic-Ship integration demo"}
           </h1>
-
-          <p.PlasmicLink
-            data-plasmic-name={"link"}
-            data-plasmic-override={overrides.link}
-            className={classNames(projectcss.all, projectcss.a, sty.link)}
-            component={Link}
-            href={`/signup`}
-            platform={"nextjs"}
-          >
-            <Button
-              className={classNames("__wab_instance", sty.button__lLis8)}
-              color={"green" as const}
-              compact={false}
-              disabled={false}
-              fullWidth={false}
-              loaderPosition={"left" as const}
-              loading={false}
-              radius={5 as const}
-              size={"lg" as const}
-              type={"button" as const}
-              uppercase={false}
-              variant={"filled" as const}
-            >
-              <div
-                className={classNames(
-                  projectcss.all,
-                  projectcss.__wab_text,
-                  sty.text__xnS4K
-                )}
-              >
-                {"Click here to watch Sign up demo"}
-              </div>
-            </Button>
-          </p.PlasmicLink>
         </p.Stack>
-
-        <div className={classNames(projectcss.all, sty.freeBox__b0AN)}>
-          <p.Stack
-            as={"div"}
-            hasGap={true}
-            className={classNames(projectcss.all, sty.freeBox__rrHA)}
-          >
-            <div
-              data-plasmic-name={"mantineContainerText"}
-              data-plasmic-override={overrides.mantineContainerText}
-              className={classNames(
-                projectcss.all,
-                projectcss.__wab_text,
-                sty.mantineContainerText
-              )}
-            >
-              {"Here we have Mantine components imported from code"}
-            </div>
-
-            <Button
-              className={classNames("__wab_instance", sty.button__wn1Fl)}
-              color={"cyan" as const}
-              compact={false}
-              disabled={false}
-              fullWidth={false}
-              loaderPosition={"left" as const}
-              loading={false}
-              radius={5 as const}
-              size={"md" as const}
-              type={"button" as const}
-              uppercase={false}
-              variant={"filled" as const}
-            >
-              <div
-                className={classNames(
-                  projectcss.all,
-                  projectcss.__wab_text,
-                  sty.text__jvr8D
-                )}
-              >
-                {"Mantine Button from Ship project"}
-              </div>
-            </Button>
-
-            <Button
-              className={classNames("__wab_instance", sty.button__c2Tqy)}
-              color={"cyan" as const}
-              compact={false}
-              disabled={false}
-              fullWidth={false}
-              loaderPosition={"left" as const}
-              loading={false}
-              radius={5 as const}
-              size={"xs" as const}
-              type={"button" as const}
-              uppercase={false}
-              variant={"gradient" as const}
-            >
-              <div
-                className={classNames(
-                  projectcss.all,
-                  projectcss.__wab_text,
-                  sty.text__mj6Tj
-                )}
-              >
-                {"Mantine Button from Ship project"}
-              </div>
-            </Button>
-
-            <Button
-              className={classNames("__wab_instance", sty.button__rRgyL)}
-              color={"cyan" as const}
-              compact={false}
-              disabled={false}
-              fullWidth={false}
-              loaderPosition={"left" as const}
-              loading={true}
-              radius={5 as const}
-              size={"md" as const}
-              type={"button" as const}
-              uppercase={false}
-              variant={"outline" as const}
-            >
-              <div
-                className={classNames(
-                  projectcss.all,
-                  projectcss.__wab_text,
-                  sty.text__pfAe
-                )}
-              >
-                {"Mantine Button from Ship project"}
-              </div>
-            </Button>
-
-            <Select
-              data-plasmic-name={"selectMantine"}
-              data-plasmic-override={overrides.selectMantine}
-              className={classNames("__wab_instance", sty.selectMantine)}
-              data={["Option1", "Option2", "Option3", "Option4"]}
-              disabled={false}
-              dropdownPosition={"top" as const}
-              label={
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__nocjX
-                  )}
-                >
-                  {""}
-                </div>
-              }
-              placeholder={"Enter placeholder..." as const}
-              radius={5 as const}
-              size={"md" as const}
-              variant={"default" as const}
-            />
-
-            <TextInput
-              data-plasmic-name={"textInput"}
-              data-plasmic-override={overrides.textInput}
-              className={classNames("__wab_instance", sty.textInput)}
-              disabled={false}
-              label={
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__rwsD
-                  )}
-                >
-                  {"Enter label..."}
-                </div>
-              }
-              placeholder={"Enter placeholder..." as const}
-              radius={5 as const}
-              required={false}
-              size={"md" as const}
-              variant={"default" as const}
-              withAsterisk={false}
-            />
-          </p.Stack>
-
-          <div className={classNames(projectcss.all, sty.freeBox__yslx)}>
-            <div
-              data-plasmic-name={"mantineContainerText2"}
-              data-plasmic-override={overrides.mantineContainerText2}
-              className={classNames(
-                projectcss.all,
-                projectcss.__wab_text,
-                sty.mantineContainerText2
-              )}
-            >
-              {"Here we have Ship component imported from code"}
-            </div>
-
-            <Link2
-              data-plasmic-name={"linkShip"}
-              data-plasmic-override={overrides.linkShip}
-              align={"center" as const}
-              className={classNames("__wab_instance", sty.linkShip)}
-              disabled={false}
-              href={"#" as const}
-              icon={
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__iZ9S6
-                  )}
-                >
-                  {""}
-                </div>
-              }
-              inNewTab={true}
-              inherit={false}
-              size={"md" as const}
-              type={"url" as const}
-              underline={true}
-            >
-              <div
-                className={classNames(
-                  projectcss.all,
-                  projectcss.__wab_text,
-                  sty.text__ypMsw
-                )}
-              >
-                {"Check!"}
-              </div>
-            </Link2>
-          </div>
-        </div>
       </div>
     </React.Fragment>
   ) as React.ReactElement | null;
 }
 
 const PlasmicDescendants = {
-  root: [
-    "root",
-    "section",
-    "h1",
-    "link",
-    "mantineContainerText",
-    "selectMantine",
-    "textInput",
-    "textbox",
-    "mantineContainerText2",
-    "linkShip"
-  ],
-  section: ["section", "h1", "link"],
-  h1: ["h1"],
-  link: ["link"],
-  mantineContainerText: ["mantineContainerText"],
-  selectMantine: ["selectMantine"],
-  textInput: ["textInput", "textbox"],
-  mantineContainerText2: ["mantineContainerText2"],
-  linkShip: ["linkShip"]
+  root: ["root", "section", "h1"],
+  section: ["section", "h1"],
+  h1: ["h1"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -388,12 +134,6 @@ type NodeDefaultElementType = {
   root: "div";
   section: "section";
   h1: "h1";
-  link: "a";
-  mantineContainerText: "div";
-  selectMantine: typeof Select;
-  textInput: typeof TextInput;
-  mantineContainerText2: "div";
-  linkShip: typeof Link2;
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -459,12 +199,6 @@ export const PlasmicHomepage = Object.assign(
     // Helper components rendering sub-elements
     section: makeNodeComponent("section"),
     h1: makeNodeComponent("h1"),
-    link: makeNodeComponent("link"),
-    mantineContainerText: makeNodeComponent("mantineContainerText"),
-    selectMantine: makeNodeComponent("selectMantine"),
-    textInput: makeNodeComponent("textInput"),
-    mantineContainerText2: makeNodeComponent("mantineContainerText2"),
-    linkShip: makeNodeComponent("linkShip"),
 
     // Metadata about props expected for PlasmicHomepage
     internalVariantProps: PlasmicHomepage__VariantProps,
